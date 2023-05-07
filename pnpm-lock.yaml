@@ -11,7 +11,7 @@ importers:
         specifier: ^8.40.0
         version: 8.40.0
       eslint-config-fenixui:
-        specifier: workspace:0.0.0
+        specifier: workspace:0.1.0
         version: link:packages/eslint-config-fenixui
       prettier:
         specifier: ^2.8.8
@@ -37,7 +37,7 @@ importers:
 
   packages/fenixui-core:
     devDependencies:
-      '@fenixui/tsconfig':
+      '@fenixui-org/tsconfig':
         specifier: workspace:*
         version: link:../fenixui-tsconfig
       '@types/react':
