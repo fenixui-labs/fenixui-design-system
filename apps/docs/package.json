@@ -1,0 +1,35 @@
+{
+  "name": "docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=de71291abf1e"
+  },
+  "dependencies": {
+    "@fenixui-org/core": "workspace:0.1.0",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.9",
+    "@storybook/addon-interactions": "^7.0.9",
+    "@storybook/addon-links": "^7.0.9",
+    "@storybook/blocks": "^7.0.9",
+    "@storybook/nextjs": "^7.0.9",
+    "@storybook/react": "^7.0.9",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "chromatic": "^6.17.4",
+    "eslint-config-fenixui": "workspace:0.1.0",
+    "storybook": "^7.0.9",
+    "typescript": "5.0.4"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "docs@0.1.0"
+}
