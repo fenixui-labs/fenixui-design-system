@@ -2,7 +2,11 @@
 name: 'Chromatic'
 
 # Event for the workflow
-on: push
+on:
+  push:
+    paths:
+      - 'apps/docs/**'
+  workflow_dispatch:
 
 # List of jobs
 jobs:
@@ -43,7 +47,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-        # 👇 Adds Chromatic as a step in the workflow
+      # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
