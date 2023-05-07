@@ -1,5 +1,5 @@
 {
-    "extends": "@fenixui/tsconfig/react-library.json",
+    "extends": "@fenixui-org/tsconfig/react-library.json",
     "include": ["."],
     "exclude": ["dist", "build", "node_modules"]
   }
