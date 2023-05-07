@@ -1,0 +1,20 @@
+{
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "tab",
+		"indentSize": 2,
+		"lineWidth": 80,
+		"ignore": ["dist/**", "storybook-static/**", "**/.next/**"]
+	},
+	"organizeImports": {
+		"enabled": false
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		},
+		"ignore": ["dist/**", "storybook-static/**", "**/.next/**"]
+	}
+}
