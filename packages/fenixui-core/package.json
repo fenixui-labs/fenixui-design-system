@@ -1,5 +1,5 @@
 {
-  "name": "@fenixui/core",
+  "name": "@fenixui-org/core",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -18,7 +18,7 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@fenixui/tsconfig": "workspace:*",
+    "@fenixui-org/tsconfig": "workspace:*",
     "@types/react": "^18.2.6",
     "react": "^18.2.0",
     "tsup": "^6.7.0",
