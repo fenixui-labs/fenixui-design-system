@@ -14,8 +14,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
             fetch-depth: 0
-            repository: fenixui-labs/fenixui-design-system
-            path: fenixui-design-system/apps/docs
 
       - name: Setup pnpm 7
         uses: pnpm/action-setup@v2
@@ -29,6 +27,7 @@ jobs:
 
       - name: Install Dependencies
         run: pnpm i --no-frozen-lockfile
+        working-directory: ./apps/docs
 
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -49,5 +48,6 @@ jobs:
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
         with:
+          workingDir: ./apps/docs
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
