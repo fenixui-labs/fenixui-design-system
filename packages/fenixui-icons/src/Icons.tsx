@@ -1,8 +1,10 @@
 import React from "react";
+import ArrowDown from "./icons/ArrowDown";
+import Checkmark from "./icons/Checkmark";
 
 const Icons = {
-    Arrowdown: () => <polyline points="6 9 12 15 18 9" />,
-    Checkmark: () => <polyline points="20 6 9 17 4 12" />,
+    ArrowDown,
+    Checkmark
 } as const
 
 export type IconNames = keyof typeof Icons;
