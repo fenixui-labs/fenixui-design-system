@@ -6,12 +6,11 @@ export type ElementMeta = {
 
 export function Component(
     meta: ElementMeta
-) {
+): PropertyDecorator {
     if (!meta) {
         console.error(
             "Component must include ElementMeta to compile"
         )
-        return
     }
     return (target: any) => {
         if(!meta.style) {
