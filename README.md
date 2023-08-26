@@ -3,6 +3,9 @@ Setup `gitsign`
 ```bash
 go install github.com/sigstore/gitsign@latest
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 git config --local commit.gpgsign true  # Sign all commits
 git config --local tag.gpgsign true  # Sign all tags
 git config --local gpg.x509.program gitsign  # Use Gitsign for signing
