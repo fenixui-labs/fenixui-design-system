@@ -1,5 +1,11 @@
 # eslint-config-fenixui
 
+## 0.3.0
+
+### Minor Changes
+
+- 8ae7633: update chore
+
 ## 0.2.0
 
 ### Minor Changes
