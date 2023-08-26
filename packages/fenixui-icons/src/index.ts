@@ -1,1 +1,2 @@
-export * from "."
+export * from "./Icon"
+export * from "./Icons"

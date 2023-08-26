@@ -10,7 +10,7 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "build": "tsup src/index.ts --splitting true --format esm,cjs --dts --external react",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
     "lint": "eslint \"src/**/*.ts*\"",
     "lint:fix": "eslint \"src/**/*.ts*\" --fix",
@@ -20,6 +20,7 @@
   "author": "",
   "devDependencies": {
     "@fenixui-org/tsconfig": "workspace:^",
+    "@types/node": "^20.5.6",
     "@types/react": "^18.2.6",
     "eslint-config-fenixui": "workspace:^",
     "react": "^18.2.0",
