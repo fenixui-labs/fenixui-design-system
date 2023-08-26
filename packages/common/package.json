@@ -1,0 +1,26 @@
+{
+  "name": "@fenixui-org/common",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup index.ts --splitting true --format esm,cjs --dts",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "lint:fix": "eslint \"src/**/*.ts*\" --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@fenixui-org/tsconfig": "workspace:^",
+    "eslint-config-fenixui": "workspace:^",
+    "tsup": "^6.7.0",
+    "typescript": "^5.2.2"
+  }
+}
