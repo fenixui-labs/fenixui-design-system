@@ -28,12 +28,12 @@ To create a release
 
 ```bash
 pnpm run changeset
+
+# Commit changeset
+
+# Push new commit
+
+# Run release github action workflow
+
+# `changeset` bot will open a PR
 ```
-
-Commit changeset
-
-Push new commit
-
-Run release github action workflow
-
-`changeset` bot will open a PR
