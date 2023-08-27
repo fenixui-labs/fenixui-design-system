@@ -1,0 +1,21 @@
+{
+	"$schema": "https://docs.rome.tools/schemas/12.1.3/schema.json",
+	"organizeImports": {
+		"enabled": false
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		},
+		"ignore": ["**/.vscode/**", "**/dist/**", "**/.next/**"]
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "tab",
+		"indentSize": 2,
+		"lineWidth": 80,
+		"ignore": ["**/.vscode/**", "**/dist/**", "**/.next/**"]
+	}
+}

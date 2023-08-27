@@ -28,16 +28,16 @@ import { Component, attachShadow } from "@fenixui-org/common";
         }
     `,
 	template: `
-        <header>
-            <slot name="header"></slot>
-        </header>
-        <section>
-            <slot name="content"></slot>
-        </section>
-        <footer>
-            <slot name="footer"></slot>
-        </footer>
-    `,
+    <header>
+      <slot name="header"></slot>
+    </header>
+    <section>
+      <slot name="content"></slot>
+    </section>
+    <footer>
+      <slot name="footer"></slot>
+    </footer>
+  `,
 })
 export class CardComponent extends HTMLElement {
 	constructor() {
