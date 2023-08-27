@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "reset": "npx rimraf ./**/node_modules",
     "dev": "modern dev",
@@ -17,10 +17,12 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "rome format --write", "rome check"
+      "rome format --write",
+      "rome check"
     ],
     "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
-      "rome format --write", "rome check"
+      "rome format --write",
+      "rome check"
     ]
   },
   "eslintIgnore": [
