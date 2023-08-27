@@ -1,4 +1,14 @@
-export function attachShadow(context: any, options?: ShadowRootInit) {
+type ContextWithElementMeta = {
+	elementMeta: {
+		style: string;
+		template: string;
+	};
+} & Element;
+
+export function attachShadow(
+	context: ContextWithElementMeta,
+	options?: ShadowRootInit,
+) {
 	const shadowRoot: ShadowRoot = context.attachShadow(
 		options || { mode: "open" },
 	);

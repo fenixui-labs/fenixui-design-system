@@ -29,6 +29,7 @@
     "@types/react-dom": "^18.2.7",
     "chromatic": "^6.24.1",
     "eslint-config-fenixui": "workspace:*",
+    "rome": "^12.1.3",
     "storybook": "^7.3.2",
     "typescript": "5.0.4"
   },

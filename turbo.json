@@ -2,14 +2,21 @@
 	"$schema": "https://turbo.build/schema.json",
 	"pipeline": {
 		"build": {
-			"outputs": ["dist/**", "storybook-static/**"],
+			"outputs": [
+				".next/**",
+				"!.next/cache/**",
+				"dist/**",
+				"storybook-static/**"
+			],
 			"dependsOn": ["^build"]
 		},
 		"test": {
 			"outputs": ["coverage/**"],
-			"dependsOn": []
+			"dependsOn": ["^build"]
 		},
+		"rome:format": {},
 		"rome:lint": {},
+		"rome:lint:fix": {},
 		"lint": {},
 		"dev": {
 			"cache": false,
