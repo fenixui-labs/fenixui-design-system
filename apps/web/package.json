@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@fenixui-org/web",
   "version": "0.1.1",
   "scripts": {
     "reset": "npx rimraf ./**/node_modules",
