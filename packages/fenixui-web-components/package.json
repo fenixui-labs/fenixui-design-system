@@ -15,10 +15,8 @@
   },
   "keywords": [],
   "author": "",
-  "dependencies": {
-    "@fenixui-org/common": "workspace:^"
-  },
   "devDependencies": {
+    "@fenixui-org/common": "workspace:^",
     "@fenixui-org/tsconfig": "workspace:^",
     "tsup": "^6.7.0",
     "typescript": "^5.2.2"

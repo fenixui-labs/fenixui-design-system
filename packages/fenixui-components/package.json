@@ -1,1 +1,22 @@
-{}
+{
+    "name": "@fenixui-org/components",
+    "version": "0.0.0",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "sideEffects": false,
+    "license": "MIT",
+    "files": [
+        "dist/**"
+    ],
+    "scripts": {
+        "build": "tsup src/index.ts --splitting true --format esm,cjs --dts"
+    },
+    "devDependencies": {
+        "@fenixui-org/tsconfig": "workspace:^",
+        "@types/react": "^18.2.21",
+        "react": "^18.2.0",
+        "tsup": "^6.7.0",
+        "typescript": "^5.2.2"
+    }
+}
