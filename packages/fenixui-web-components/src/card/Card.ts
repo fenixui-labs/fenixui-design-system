@@ -1,3 +1,4 @@
+/*
 import { Component, attachShadow } from "@fenixui-org/common";
 
 @Component({
@@ -45,3 +46,6 @@ export class CardComponent extends HTMLElement {
 		attachShadow(this);
 	}
 }
+*/
+
+export {};
