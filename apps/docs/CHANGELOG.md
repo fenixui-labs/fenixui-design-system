@@ -1,5 +1,11 @@
 # docs
 
+## 0.1.2
+
+### Patch Changes
+
+- 25ae622: Breaking Changes
+
 ## 0.1.1
 
 ### Patch Changes
