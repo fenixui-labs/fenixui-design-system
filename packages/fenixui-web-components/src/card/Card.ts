@@ -1,8 +1,8 @@
 import { Component, attachShadow } from "@fenixui-org/common";
 
 @Component({
-  selector: 'in-card',
-  style: `
+	selector: "in-card",
+	style: `
         :host {
             display: block;
             background: var(--color-white);
@@ -27,7 +27,7 @@ import { Component, attachShadow } from "@fenixui-org/common";
             padding-right: 0px;
         }
     `,
-  template: `
+	template: `
         <header>
             <slot name="header"></slot>
         </header>
@@ -40,8 +40,8 @@ import { Component, attachShadow } from "@fenixui-org/common";
     `,
 })
 export class CardComponent extends HTMLElement {
-  constructor() {
-    super();
-    attachShadow(this);
-  }
+	constructor() {
+		super();
+		attachShadow(this);
+	}
 }

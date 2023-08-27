@@ -1,1 +1,1 @@
-export { attachShadow } from "./shadow"
+export { attachShadow } from "./shadow";

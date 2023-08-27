@@ -1,6 +1,2 @@
-export { 
-    Component
-} from "./component"
-export type {
-    ElementMeta
-} from "./component"
+export { Component } from "./component";
+export type { ElementMeta } from "./component";

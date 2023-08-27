@@ -21,6 +21,7 @@
   "devDependencies": {
     "@fenixui-org/tsconfig": "workspace:*",
     "@types/react": "^18.2.6",
+    "eslint-config-fenixui": "workspace:^",
     "react": "^18.2.0",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
