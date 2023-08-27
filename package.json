@@ -18,6 +18,7 @@
     "test": "turbo run test"
   },
   "devDependencies": {
+    "@changesets/changelog-git": "^0.1.14",
     "@changesets/cli": "^2.26.2",
     "eslint": "^8.48.0",
     "eslint-config-fenixui": "workspace:*",
@@ -28,6 +29,9 @@
     "turbo": "^1.10.13"
   },
   "lint-staged": {
-    "**/*.{js,cjs,mjs,ts}": ["rome format --write", "rome check"]
+    "**/*.{js,cjs,mjs,ts}": [
+      "rome format --write",
+      "rome check"
+    ]
   }
 }
