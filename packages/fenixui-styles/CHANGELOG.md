@@ -1,5 +1,11 @@
 # @fenixui-org/styles
 
+## 0.1.0
+
+### Minor Changes
+
+- 81aff71: Added FenixProvider and FenixCssVarsProvider
+
 ## 0.0.2
 
 ### Patch Changes
