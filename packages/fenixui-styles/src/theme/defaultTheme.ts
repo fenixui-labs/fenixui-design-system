@@ -6,7 +6,9 @@ import { darken, lighten } from "polished";
 
 const muiTheme = (mode: ThemeVariantsProps) => {
 	return createTheme({
-		typography: {},
+		typography: {
+			fontFamily: "Raleway, Open Sans, sans-serif",
+		},
 		palette: {
 			primary: {
 				light: lighten(0.7, defaultPalette.purple[0]),
