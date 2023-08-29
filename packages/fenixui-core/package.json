@@ -28,5 +28,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@fenixui-org/components": "workspace:^",
+    "@fenixui-org/styles": "workspace:^"
   }
 }

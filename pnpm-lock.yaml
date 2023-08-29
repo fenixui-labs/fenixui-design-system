@@ -213,6 +213,13 @@ importers:
         version: registry.npmjs.org/typescript@5.2.2
 
   packages/fenixui-core:
+    dependencies:
+      '@fenixui-org/components':
+        specifier: workspace:^
+        version: link:../fenixui-components
+      '@fenixui-org/styles':
+        specifier: workspace:^
+        version: link:../fenixui-styles
     devDependencies:
       '@fenixui-org/tsconfig':
         specifier: workspace:*
@@ -271,9 +278,24 @@ importers:
       '@mui/material':
         specifier: ^5.14.6
         version: registry.npmjs.org/@mui/material@5.14.6(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
+      '@types/ramda':
+        specifier: ^0.29.3
+        version: registry.npmjs.org/@types/ramda@0.29.3
       '@types/react':
         specifier: ^18.2.21
         version: registry.npmjs.org/@types/react@18.2.21
+      fp-ts:
+        specifier: ^2.16.1
+        version: registry.npmjs.org/fp-ts@2.16.1
+      io-ts:
+        specifier: ^2.2.20
+        version: registry.npmjs.org/io-ts@2.2.20(fp-ts@2.16.1)
+      polished:
+        specifier: ^4.2.2
+        version: registry.npmjs.org/polished@4.2.2
+      ramda:
+        specifier: ^0.29.0
+        version: registry.npmjs.org/ramda@0.29.0
       react:
         specifier: ^18.2.0
         version: registry.npmjs.org/react@18.2.0
@@ -2435,7 +2457,7 @@ packages:
       '@storybook/types': 7.3.2
       dequal: 2.0.3
       lodash: 4.17.21
-      polished: 4.2.2
+      polished: registry.npmjs.org/polished@4.2.2
       prop-types: registry.npmjs.org/prop-types@15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2601,7 +2623,7 @@ packages:
       '@storybook/theming': 7.3.2(react-dom@18.2.0)(react@18.2.0)
       '@storybook/types': 7.3.2
       jest-mock: 27.5.1
-      polished: 4.2.2
+      polished: registry.npmjs.org/polished@4.2.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       ts-dedent: 2.2.0
@@ -2775,7 +2797,7 @@ packages:
       lodash: 4.17.21
       markdown-to-jsx: 7.3.2(react@18.2.0)
       memoizerific: 1.11.3
-      polished: 4.2.2
+      polished: registry.npmjs.org/polished@4.2.2
       react: 18.2.0
       react-colorful: 5.6.1(react-dom@18.2.0)(react@18.2.0)
       react-dom: 18.2.0(react@18.2.0)
@@ -6003,7 +6025,7 @@ packages:
     resolution: {integrity: sha512-l4DMNdsIPsVnKrgEXbJwDJsA5mB8rGwHYERMgqQx/xAUtChPJMre1bXBzDEqqVbWv9AIbFezXMxeEkZDSrXUOQ==}
     dependencies:
       fs-extra: 11.1.1
-      ramda: 0.29.0
+      ramda: registry.npmjs.org/ramda@0.29.0
     dev: true
 
   /filelist@1.0.4:
@@ -7548,13 +7570,6 @@ packages:
       - typescript
     dev: true
 
-  /polished@4.2.2:
-    resolution: {integrity: sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime@7.22.11
-    dev: true
-
   /postcss-load-config@3.1.4:
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
@@ -7791,10 +7806,6 @@ packages:
     resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
     dependencies:
       inherits: registry.npmjs.org/inherits@2.0.4
-    dev: true
-
-  /ramda@0.29.0:
-    resolution: {integrity: sha512-BBea6L67bYLtdbOqfp8f58fPMqEwx0doL+pAi8TZyp2YWz8R9G8z9x75CZI8W+ftqhFHCpEX2cRnUUXK130iKA==}
     dev: true
 
   /randombytes@2.1.0:
@@ -14934,6 +14945,14 @@ packages:
     name: '@types/prop-types'
     version: 15.7.5
 
+  registry.npmjs.org/@types/ramda@0.29.3:
+    resolution: {integrity: sha512-Yh/RHkjN0ru6LVhSQtTkCRo6HXkfL9trot/2elzM/yXLJmbLm2v6kJc8yftTnwv1zvUob6TEtqI2cYjdqG3U0Q==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/ramda/-/ramda-0.29.3.tgz}
+    name: '@types/ramda'
+    version: 0.29.3
+    dependencies:
+      types-ramda: registry.npmjs.org/types-ramda@0.29.4
+    dev: false
+
   registry.npmjs.org/@types/react-dom@18.0.10:
     resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-18.0.10.tgz}
     name: '@types/react-dom'
@@ -18631,6 +18650,12 @@ packages:
       qs: registry.npmjs.org/qs@6.11.2
     dev: true
 
+  registry.npmjs.org/fp-ts@2.16.1:
+    resolution: {integrity: sha512-by7U5W8dkIzcvDofUcO42yl9JbnHTEDBrzu3pt5fKT+Z4Oy85I21K80EYJYdjQGC2qum4Vo55Ag57iiIK4FYuA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/fp-ts/-/fp-ts-2.16.1.tgz}
+    name: fp-ts
+    version: 2.16.1
+    dev: false
+
   registry.npmjs.org/fresh@0.5.2:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz}
     name: fresh
@@ -19383,6 +19408,17 @@ packages:
     version: 2.2.4
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify@1.4.0
+
+  registry.npmjs.org/io-ts@2.2.20(fp-ts@2.16.1):
+    resolution: {integrity: sha512-Rq2BsYmtwS5vVttie4rqrOCIfHCS9TgpRLFpKQCM1wZBBRY9nWVGmEvm2FnDbSE2un1UE39DvFpTR5UL47YDcA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/io-ts/-/io-ts-2.2.20.tgz}
+    id: registry.npmjs.org/io-ts/2.2.20
+    name: io-ts
+    version: 2.2.20
+    peerDependencies:
+      fp-ts: ^2.5.0
+    dependencies:
+      fp-ts: registry.npmjs.org/fp-ts@2.16.1
+    dev: false
 
   registry.npmjs.org/is-alphabetical@1.0.4:
     resolution: {integrity: sha512-DwzsA04LQ10FHTZuL0/grVDk4rFoVH1pjAToYwBrHSxcrBIGQuXrQMtD5U1b0U2XVgKZCTLLP8u2Qxqhy3l2Vg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/is-alphabetical/-/is-alphabetical-1.0.4.tgz}
@@ -21960,6 +21996,14 @@ packages:
       find-up: registry.npmjs.org/find-up@3.0.0
     dev: true
 
+  registry.npmjs.org/polished@4.2.2:
+    resolution: {integrity: sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/polished/-/polished-4.2.2.tgz}
+    name: polished
+    version: 4.2.2
+    engines: {node: '>=10'}
+    dependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime@7.22.11
+
   registry.npmjs.org/postcss-calc@9.0.1(postcss@8.4.27):
     resolution: {integrity: sha512-TipgjGyzP5QzEhsOZUaIkeO5mKeMFpebWzRogWG/ysonUlnHcq5aJe0jOjpfzUU8PeSaBQnrE8ehR0QA5vs8PQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/postcss-calc/-/postcss-calc-9.0.1.tgz}
     id: registry.npmjs.org/postcss-calc/9.0.1
@@ -22935,6 +22979,11 @@ packages:
     version: 4.0.1
     engines: {node: '>=8'}
     dev: true
+
+  registry.npmjs.org/ramda@0.29.0:
+    resolution: {integrity: sha512-BBea6L67bYLtdbOqfp8f58fPMqEwx0doL+pAi8TZyp2YWz8R9G8z9x75CZI8W+ftqhFHCpEX2cRnUUXK130iKA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/ramda/-/ramda-0.29.0.tgz}
+    name: ramda
+    version: 0.29.0
 
   registry.npmjs.org/randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/randombytes/-/randombytes-2.1.0.tgz}
@@ -24630,6 +24679,12 @@ packages:
       webpack: registry.npmjs.org/webpack@5.88.2(esbuild@0.17.19)
     dev: true
 
+  registry.npmjs.org/ts-toolbelt@9.6.0:
+    resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/ts-toolbelt/-/ts-toolbelt-9.6.0.tgz}
+    name: ts-toolbelt
+    version: 9.6.0
+    dev: false
+
   registry.npmjs.org/tsconfig-paths@3.14.2:
     resolution: {integrity: sha512-o/9iXgCYc5L/JxCHPe3Hvh8Q/2xm5Z+p18PESBU6Ff33695QnCHBEjcytY2q19ua7Mbl/DavtBOLq+oG0RCL+g==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.14.2.tgz}
     name: tsconfig-paths
@@ -24901,6 +24956,14 @@ packages:
     name: typed-assert
     version: 1.0.9
     dev: true
+
+  registry.npmjs.org/types-ramda@0.29.4:
+    resolution: {integrity: sha512-XO/820iRsCDwqLjE8XE+b57cVGPyk1h+U9lBGpDWvbEky+NQChvHVwaKM05WnW1c5z3EVQh8NhXFmh2E/1YazQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/types-ramda/-/types-ramda-0.29.4.tgz}
+    name: types-ramda
+    version: 0.29.4
+    dependencies:
+      ts-toolbelt: registry.npmjs.org/ts-toolbelt@9.6.0
+    dev: false
 
   registry.npmjs.org/typescript@5.0.4:
     resolution: {integrity: sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/typescript/-/typescript-5.0.4.tgz}

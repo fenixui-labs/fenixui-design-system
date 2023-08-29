@@ -1,3 +1,4 @@
+/*
 declare module "@mui/material/styles" {
 	interface Theme {
 		spacing: (s: SpacerIndex) => number;
@@ -23,3 +24,4 @@ export const spacing = (index: SpacerIndex) => {
 	const scalingFactor = 1.5;
 	return spaces[index] * scalingFactor;
 };
+*/

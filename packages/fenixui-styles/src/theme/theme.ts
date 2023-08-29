@@ -1,10 +1,12 @@
 import { breakpoints } from "./breakpoints/breakpoints";
 import { components } from "./components/components";
 import { darkModePalette, lightModePalette } from "./palette/palette";
-import { spacing } from "./spacing/spacing";
 import { transitions } from "./transition/transition";
 import { typography } from "./typography/typography";
-import { createTheme } from "@mui/material";
+import {
+	createTheme,
+	experimental_extendTheme as extendTheme,
+} from "@mui/material";
 import { orange } from "@mui/material/colors";
 
 export enum ThemeVariantsProps {
@@ -32,12 +34,33 @@ export const theme = (mode: ThemeVariantsProps) => {
 			...(mode === "light" ? lightModePalette : darkModePalette),
 		},
 		typography,
-		spacing,
+		// spacing,
 		breakpoints,
 		transitions,
 		components,
 		status: {
 			danger: orange[500],
+		},
+	});
+};
+
+export const cssVarsTheme = (mode: ThemeVariantsProps) => {
+	return extendTheme({
+		colorSchemes: {
+			light: {
+				palette: {
+					primary: {},
+					secondary: {},
+					neutral: {},
+				},
+			},
+			dark: {
+				palette: {
+					primary: {},
+					secondary: {},
+					neutral: {},
+				},
+			},
 		},
 	});
 };

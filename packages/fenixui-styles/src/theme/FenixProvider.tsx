@@ -1,7 +1,8 @@
-import { ThemeVariantsProps, theme } from "./theme";
+import muiTheme from "./defaultTheme";
+import { ThemeVariantsProps } from "./theme";
 import { EmotionCache } from "@emotion/react";
 import { ThemeProvider } from "@mui/material";
-import React, { ReactNode, createContext, useMemo } from "react";
+import { ReactNode, createContext, useMemo } from "react";
 import { proxy, useSnapshot } from "valtio";
 
 const state = proxy({
@@ -22,7 +23,7 @@ export type FenixProviderProps = {
 export function FenixProvider({ emotionCache, children }: FenixProviderProps) {
 	const snapshot = useSnapshot(state);
 
-	const activeTheme = useMemo(() => theme(snapshot.mode), [snapshot.mode]);
+	const activeTheme = useMemo(() => muiTheme(snapshot.mode), [snapshot.mode]);
 
 	/*
 	const handleOnChange = useCallback(() => {
