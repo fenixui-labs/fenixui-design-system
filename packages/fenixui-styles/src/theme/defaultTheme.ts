@@ -1,5 +1,7 @@
+import { defaultPalette } from "./defaultPalette";
 import { ThemeVariantsProps } from "./theme";
 import { createTheme } from "@mui/material";
+import { blue, green, orange, red } from "@mui/material/colors";
 import { darken, lighten } from "polished";
 
 const muiTheme = (mode: ThemeVariantsProps) => {
@@ -7,40 +9,40 @@ const muiTheme = (mode: ThemeVariantsProps) => {
 		typography: {},
 		palette: {
 			primary: {
-				light: lighten(0.7, ""),
-				main: "",
-				dark: "",
+				light: lighten(0.7, defaultPalette.purple[0]),
+				main: defaultPalette.purple[0],
+				dark: defaultPalette.purple[5],
 				contrastText: "#FFFFFF",
 			},
 			secondary: {
-				light: lighten(0.1, ""),
-				main: "",
-				dark: "",
+				light: lighten(0.1, defaultPalette.rose[0]),
+				main: defaultPalette.rose[0],
+				dark: defaultPalette.rose[5],
 				contrastText: "#FFFFFF",
 			},
 			neutral: {},
 			error: {
-				light: lighten(0.1, ""),
-				main: "",
-				dark: darken(0.1, ""),
+				light: lighten(0.1, red[400]),
+				main: red[400],
+				dark: darken(0.1, red[400]),
 				contrastText: "#FFFFFF",
 			},
 			warning: {
-				light: lighten(0.1, ""),
-				main: "",
-				dark: darken(0.1, ""),
+				light: lighten(0.1, orange[400]),
+				main: orange[500],
+				dark: darken(0.1, orange[400]),
 				contrastText: "#000000",
 			},
 			info: {
-				light: lighten(0.1, ""),
-				main: "",
-				dark: darken(0.1, ""),
+				light: lighten(0.1, blue[400]),
+				main: blue[500],
+				dark: darken(0.1, blue[400]),
 				contrastText: "#FFFFFF",
 			},
 			success: {
-				light: lighten(0.1, ""),
-				main: "",
-				dark: darken(0.1, ""),
+				light: lighten(0.1, green[400]),
+				main: green[500],
+				dark: darken(0.1, green[400]),
 				contrastText: "#FFFFFF",
 			},
 			grey: {
