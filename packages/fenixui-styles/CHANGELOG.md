@@ -1,5 +1,11 @@
 # @fenixui-org/styles
 
+## 0.3.0
+
+### Minor Changes
+
+- e98e133: Added fontFamily to theme
+
 ## 0.2.0
 
 ### Minor Changes
