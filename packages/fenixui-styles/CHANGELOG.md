@@ -1,5 +1,11 @@
 # @fenixui-org/styles
 
+## 0.2.0
+
+### Minor Changes
+
+- 2141229: Added default colors to palette"
+
 ## 0.1.0
 
 ### Minor Changes

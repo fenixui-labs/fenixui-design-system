@@ -1,5 +1,12 @@
 # @fenixui/core
 
+## 0.3.1
+
+### Patch Changes
+
+- Updated dependencies [2141229]
+  - @fenixui-org/styles@0.2.0
+
 ## 0.3.0
 
 ### Minor Changes
