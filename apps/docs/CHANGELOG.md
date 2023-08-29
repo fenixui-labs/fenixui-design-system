@@ -1,5 +1,11 @@
 # docs
 
+## 0.1.4
+
+### Patch Changes
+
+- @fenixui-org/core@0.3.1
+
 ## 0.1.3
 
 ### Patch Changes
