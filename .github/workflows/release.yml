@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Setup pnpm 7
         uses: pnpm/action-setup@v2
@@ -46,6 +48,9 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
+          # changesets increments the version in package.json according
+          # to changesets files it detects and `pnpm i` updates lockfile
+          version: pnpm changeset-version && pnpm i
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: pnpm release
         env:
