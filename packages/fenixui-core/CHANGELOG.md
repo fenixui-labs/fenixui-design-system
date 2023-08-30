@@ -1,5 +1,11 @@
 # @fenixui/core
 
+## 0.4.1
+
+### Patch Changes
+
+- e1c422e: exported CytoscapeContainer
+
 ## 0.4.0
 
 ### Minor Changes
