@@ -1,5 +1,11 @@
 # @fenixui/core
 
+## 0.4.0
+
+### Minor Changes
+
+- 3d53472: Revised core library to wrap cytoscape
+
 ## 0.3.2
 
 ### Patch Changes
