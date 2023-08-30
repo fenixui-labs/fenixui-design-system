@@ -7,6 +7,7 @@ export * from "./hooks/useCytoscape";
 export * from "./hooks/useDraggable";
 export * from "./hooks/useFullScreen";
 export * from "./hooks/useOverlayedComponent";
+export * from "./components/CytoscapeContainer";
 export * from "./types";
 export * from "@fenixui-org/styles";
 export * from "@fenixui-org/components";
