@@ -11,9 +11,9 @@
     "rome:lint:fix:unsafe": "pnpm rome check --apply-unsafe ./",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish",
+    "changeset-check": "changeset status --verbose --since=origin/main",
+    "changeset-version": "changeset version && pnpm install",
+    "changeset-release": "turbo run build --filter=docs^... && changeset publish",
     "prepare": "husky install",
     "test": "turbo run test"
   },
