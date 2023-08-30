@@ -1,5 +1,11 @@
 # @fenixui/core
 
+## 0.5.0
+
+### Minor Changes
+
+- 424305a: Added export default to export CytoscapeContainer
+
 ## 0.4.1
 
 ### Patch Changes
