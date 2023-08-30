@@ -1,5 +1,12 @@
 # docs
 
+## 0.1.7
+
+### Patch Changes
+
+- Updated dependencies [e1c422e]
+  - @fenixui-org/core@0.4.1
+
 ## 0.1.6
 
 ### Patch Changes
