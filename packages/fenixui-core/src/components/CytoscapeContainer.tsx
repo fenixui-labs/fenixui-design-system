@@ -106,3 +106,5 @@ const CytoscapeContainerComponent = (
 };
 
 export const CytoscapeContainer = forwardRef(CytoscapeContainerComponent);
+
+export default CytoscapeContainer;
