@@ -13,7 +13,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset-check": "changeset status --verbose --since=origin/main",
     "changeset-version": "changeset version && pnpm install",
-    "changeset-release": "turbo run build --filter=docs^... && changeset publish",
+    "changeset-publish": "turbo run build --filter=docs^... && changeset publish",
     "prepare": "husky install",
     "test": "turbo run test"
   },
